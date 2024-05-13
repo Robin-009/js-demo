@@ -31,3 +31,26 @@ const myfunction = function(){
 }
 
 console.log(typeof heroes);
+
+//*****************Memory***************
+
+// Heap {non - primitive} , Stack {primitive}
+
+let rohit = "rohit babu"
+
+let anotherName = rohit;
+anotherName = "chai aur code"
+
+console.log( anotherName)
+
+let user ={
+    email : "user@gmail.com",
+    upi : "robin.upi"
+}
+
+let user1 = user
+
+user1.email = "robin@gmail.com"
+
+console.log(user.email)
+console.log(user1.email)
